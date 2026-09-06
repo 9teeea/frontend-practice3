@@ -84,3 +84,64 @@ footer {
   color: #888;
   font-size: 14px;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.spot-card {
+  background: #fff;
+  border: 1px solid #e8e0d5;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.spot-card h3 {
+  margin: 0;
+  color: #8b1a1a;
+  font-size: 18px;
+}
+
+.spot-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.spot-card .tag {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #f4e4d4;
+  color: #8b1a1a;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.spot-card a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spot-card a:hover {
+  text-decoration: underline;
+}
+
+/* 平板及以下：缩小卡片内边距 */
+@media (max-width: 767px) {
+  .spot-card { padding: 16px; }
+  .hero h1 { font-size: 22px; }
+}
+
+/* 桌面端：卡片内边距加大 */
+@media (min-width: 992px) {
+  .spot-card { padding: 24px; }
+}
