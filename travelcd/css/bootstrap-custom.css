@@ -1,0 +1,16 @@
+/* 覆盖示例：让卡片标题统一成都主题红色 */
+.card .card-title {
+  color: #8b1a1a;
+  font-weight: bold;
+}
+
+/* 按钮品牌色微调 */
+.btn-primary {
+  background-color: #8b1a1a;
+  border-color: #8b1a1a;
+}
+
+.btn-primary:hover {
+  background-color: #6f1414;
+  border-color: #6f1414;
+}
